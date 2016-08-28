@@ -1,0 +1,71 @@
+<ion-view view-title="Time Sheet Mobile" hide-back-button="true">
+  
+  
+  <ion-content class="has-header"	padding="true">
+ 
+        <ion-item>
+		<h2 align="center"><b>Punched In</b></h2>
+      <h1 align="center"style="padding-right:22px;"><i class="icon ion-clock"></i><b>00:00:00</b></h1>
+	  <h3 align="center"><b>HH:MM:SS</b></h3>
+   </ion-item>
+   <br>
+		<div class="item item-body">
+	<form class="list " id="detail-form2">
+     <label id="detail-select3" class="item item-select "> <span
+			class="input-label side_label">Customer Job</span> <select>
+				<option>7135 Acme Industries</option>
+				
+		</select>
+		</label>
+		 <label id="detail-select3" class="item item-select "> <span
+			class="input-label side_label">Task Or service</span> <select>
+				<option>1 Electrical</option>
+				
+		</select>
+		</label>
+    <label class="item item-input">
+      <span class="input-label">Notes</span>
+      <input type="text" value="Finished Phase 1">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Mileage</span>
+      <input type="text"value="55">
+    </label>
+    </form>
+	</div>
+	
+  <button  class="button button-light button-full" >Switch</button>
+   <button  class="button button-energized button-full" ng-click="showAlert()">Punch-Out</button>
+  </ion-content>
+
+
+
+</ion-view>
+<style>
+.popup-title {
+    background-color: #ffc900 !important;
+    border-bottom: 1px solid #eee;
+    padding: 15px 10px;
+    text-align: center;
+}
+.popup-sub-title{
+color:black !important;
+}
+.popup-body {
+    color: black !important;
+    overflow: auto;
+    padding: 10px;
+}
+
+.popup-container .popup {
+    background-color:#fff;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    max-height: 90%;
+    max-width: 100%;
+    width: 250px;
+}
+
+
+</style>

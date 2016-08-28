@@ -1,0 +1,50 @@
+
+<ion-side-menus enable-menu-with-back-views="true">
+  
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-deepblue">
+      <!-- #TIP: <ion-nav-back-button> is commented out in this example,
+        uncomment if you need a back button in some views.
+      -->
+      <!--
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      -->
+      <ion-nav-buttons side="left" >
+        <button class="white-color button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    
+    <ion-nav-view name="menuContent" class="slide-left-right"></ion-nav-view>
+  
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <!--
+      #IMPLEMENTATION-DETAIL:
+      we are using our custom bar classes here
+      see scss/themed.scss for implementation.
+    -->
+    <ion-header-bar class="bar-deepblue-reverse bar-deepblue-borderbottom">
+    </ion-header-bar>
+  
+    <ion-content>
+      <ion-list>
+		  <ion-item menu-close href="#/app/timeSheet">
+          Time Sheet
+        </ion-item>
+		 <ion-item menu-close href="#/app/punchedIn">
+          Punched IN
+        </ion-item>
+        <ion-item menu-close href="#/app/punchedOut">
+          Punched OUT
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+    
+  
+  
+  </ion-side-menu>
+</ion-side-menus>
